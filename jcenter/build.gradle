@@ -17,11 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    publish {
+        userOrg = 'only'
+        groupId = 'com.only'
+        artifactId = 'testlin'
+        publishVersion = '0.0.1'
+        desc = 'Simple ForecastIO client'
+        website = 'https://github.com/onlybeyond/JcenterTest'
+    }
 }
+
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
-    classpath 'com.novoda:bintray-release:0.3.4'
 }
